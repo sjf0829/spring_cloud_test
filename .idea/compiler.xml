@@ -12,6 +12,7 @@
         <module name="demo" />
         <module name="service-feign" />
         <module name="service-zuul" />
+        <module name="config-server" />
         <module name="sertvice-hi" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="sertvice-hi" options="-parameters" />
       <module name="sertvice-hi2" options="-parameters" />
