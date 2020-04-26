@@ -10,6 +10,7 @@
         <module name="eureka-server" />
         <module name="sertvice-hi2" />
         <module name="demo" />
+        <module name="config-client" />
         <module name="service-feign" />
         <module name="service-zuul" />
         <module name="config-server" />
@@ -22,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="sertvice-hi" options="-parameters" />
