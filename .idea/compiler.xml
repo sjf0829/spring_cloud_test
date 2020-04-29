@@ -7,14 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_cloud_test" />
+        <module name="config-client2" />
         <module name="eureka-server" />
         <module name="sertvice-hi2" />
         <module name="demo" />
         <module name="config-client" />
         <module name="service-feign" />
-        <module name="service-zuul" />
-        <module name="config-server" />
         <module name="sertvice-hi" />
+        <module name="config-server" />
+        <module name="service-zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-client" options="-parameters" />
+      <module name="config-client2" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="sertvice-hi" options="-parameters" />
